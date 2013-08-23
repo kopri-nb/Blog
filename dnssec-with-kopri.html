@@ -1,62 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<meta charset="utf-8">
-	<title>IBrokeMySpacebar</title>
-	<meta name="description" content="">
-	<meta name="author" content="kopri">
 
-	<!-- HTML5 shim, for IE6-8 support of HTML elements -->
-	<!--[if lt IE 9]>
-		<script src="https://kopri.mooo.com/theme/html5.js"></script>
-	<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+  <title>Unbound with DNSSEC and Adblocking</title>
+<link href="https://kopri.mooo.com/theme/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://kopri.mooo.com/" type="application/atom+xml" rel="alternate" title="IBrokeMySpacebar ATOM Feed" />
+  
+  <!--[if IE]>
+  <style type="text/css"> 
+  .twoColFixRtHdr #mainContent { zoom: 1; }
+  </style>
+  <![endif]-->
 
-	<!-- Styles -->
-	<link href="https://kopri.mooo.com/theme/bootstrap.min.css" rel="stylesheet">
-	<link href="https://kopri.mooo.com/theme/local.css" rel="stylesheet">
-	<link href="https://kopri.mooo.com/theme/pygments.css" rel="stylesheet">
+</head>
 
-    <!-- Feeds -->
-        
-		</head>
 <body>
-			<div class="topbar">
-	  <div class="topbar-inner">
-		<div class="container-fluid">
-		  <a class="brand" href="https://kopri.mooo.com/">IBrokeMySpacebar</a>
-			<ul class="nav">
-																										<li class="active"><a href="https://kopri.mooo.com/category/dns.html">DNS</a></li>
-							</ul>
-			<p class="pull-right"><a href="https://kopri.mooo.com/archives.html">[archives]</a> <a href="https://kopri.mooo.com/tags.html">[tags]</a></p>
-		</div>
-	  </div>
-	</div>
 
-	<div class="container-fluid">
-	  <div class="sidebar">
-		<div class="well">
-			<h3>Blogroll</h3>
-			<ul>
-								<li><a href="http://getpelican.com/">Pelican</a></li>
-								<li><a href="http://python.org/">Python.org</a></li>
-							</ul>
-			<div class="social">
-			<h3>Social</h3>
-			<ul>
-								<li><a href="https://github.com/kopri-nb/dotfiles">My Github</a></li>
-								<li><a href="http://kopri.mooo.com/startpage/startpage.html">My Startpage</a></li>
-							</ul>
-			</div>
-		</div>
-	  </div>
-	  <div class="content">
-							<div class='article'>
-		<div class="page-header"><h1>Unbound with DNSSEC and Adblocking</h1></div>
-		<div class="well small">Permalink: <a class="more" href="https://kopri.mooo.com/dnssec-with-kopri.html">2013-08-23 10:20:00</a>
-by <a class="url fn" href="https://kopri.mooo.com/author/kopri.html">kopri </a>
- in <a href="https://kopri.mooo.com/category/dns.html">DNS</a>
-tags: <a href="https://kopri.mooo.com/tag/dns.html">DNS</a> <a href="https://kopri.mooo.com/tag/dnssec.html">DNSSEC</a> <a href="https://kopri.mooo.com/tag/adblocking.html">adblocking</a> </div>
-		<div><p>Today I'm going to walk you through the installation of Unbound. Unbound is a validating, recursive, and caching DNS resolver. Unbound is designed as a set of modular components, so that also DNSSEC (secure DNS) validation and stub-resolvers (that do not run as a server, but are linked into an application) are easily possible. In addition to setting up Unbound with DNSSEC I'm going to show you how to use Unbound to block ads, spyware, and otherwise nasty stuff. Doing so saves you bandwidth and browser speed since unlike Adblock Plus you are never communicating with the ad's server at all. 
+<div id="container">
+
+  <div id="header">
+  <h1><a href="https://kopri.mooo.com/index.html">IBrokeMySpacebar</h1>
+    
+  </div><!-- end #header -->
+  
+  <div id="topMenu">
+  
+    <ul>
+            	<li><a href="https://kopri.mooo.com/index.html">Home</a></li>
+        <li>&ndash;</li>
+        <li><a href="https://kopri.mooo.com/archives.html">Archives</a></li>
+                
+    </ul>
+  
+  </div><!-- end #topMenu -->
+
+  <div id="sidebar">
+    <ul>
+  		<li>
+	    <h3>Pages</h3>
+	    <ul>
+            	    </ul>
+	</li>
+          		<li>
+            <h3>Categories</h3>
+            <ul>
+	        		     <li class="active"><a href="https://kopri.mooo.com/category/dns.html">DNS</a></li>
+	        	    </ul>
+	</li>
+                	<li>
+		<h3>Blogroll</h3>
+		<ul>
+		                    <li><a href="http://getpelican.com/">Pelican</a></li>
+                                    <li><a href="http://python.org/">Python.org</a></li>
+                		</ul>
+	</li>
+		        <li>
+                <h3>Social</h3>
+                <ul>
+                                                                            <li><a href="https://github.com/kopri-nb">My Github</a></li>
+                                    <li><a href="http://kopri.mooo.com/startpage/startpage.html">My Startpage</a></li>
+                                </ul>
+        </li><!-- /.social -->
+          	        <li>
+            <h3>Tags</h3>
+            <ul>
+                                <li><a href="https://kopri.mooo.com/tag/adblocking.html">adblocking</a></li>
+                                <li><a href="https://kopri.mooo.com/tag/dnssec.html">DNSSEC</a></li>
+                                <li><a href="https://kopri.mooo.com/tag/dns.html">DNS</a></li>
+                        </ul>
+        </li>
+            </ul>
+  </div><!-- end #sidebar -->
+
+  <div id="mainContent">
+  	
+     
+
+
+<div class="blogItem">
+    
+      <h2><a href="https://kopri.mooo.com/dnssec-with-kopri.html">Unbound with DNSSEC and Adblocking</a></h2>
+      <h3>Fri 23 August 2013</h3>
+      
+  <p>Today I'm going to walk you through the installation of Unbound. Unbound is a validating, recursive, and caching DNS resolver. Unbound is designed as a set of modular components, so that also DNSSEC (secure DNS) validation and stub-resolvers (that do not run as a server, but are linked into an application) are easily possible. In addition to setting up Unbound with DNSSEC I'm going to show you how to use Unbound to block ads, spyware, and otherwise nasty stuff. Doing so saves you bandwidth and browser speed since unlike Adblock Plus you are never communicating with the ad's server at all. 
 Getting started you're going to want to of course install Unbound!</p>
 <p>On Debian based distros:
 'sudo apt-get install unbound'</p>
@@ -98,17 +127,27 @@ As you can see I have set up Unbound to run with lower privileges and so it cann
 <p>'# unbound-control-setup'</p>
 <p>to generate the necessary TLS key files (they are put in the default install directory)</p>
 <p>NOW YOU ARE READY MY SON! Start Unbound and configure your firewall to allow port 53 out! Point the nodes you want to use your DNS to your IP address and BAM! DNSSEC and no more annoying ads!</p>
-<p>By the way this is very low resource. I have this running on my desktop along with a web server with no discernible performance loss. It has boosted my internet browsing speed though!</p></div>
-		<div>
-			<h2>Comments</h2>
-		 									<div>
-	</div>	
-		<footer>
-		  <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme based on <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.</p>
-		  <p>&copy; kopri</p>
-		</footer>
-	  </div>
+<p>By the way this is very low resource. I have this running on my desktop along with a web server with no discernible performance loss. It has boosted my internet browsing speed though!</p>	
+        
+      <h3 class="blogMeta">By <a href="#">kopri</a>, Category: <a href="https://kopri.mooo.com/category/dns.html">DNS</a></h3>
+	<h3 class="blogMeta">Tags: <span><a href="https://kopri.mooo.com/tag/dns.html">DNS</a> / </span>
+<span><a href="https://kopri.mooo.com/tag/dnssec.html">DNSSEC</a> / </span>
+<span><a href="https://kopri.mooo.com/tag/adblocking.html">adblocking</a> / </span>
+</h3>    
+    </div><!-- end #blogItem -->
+				
+				<!-- end #content -->
+  
+  </div><!-- end #mainContent -->
 
-	</div>
+<div class="clearfloat"></div>
+
+  <div id="footer">
+  
+    <p><a href="http://css4free.com/" title="free CSS web site designs">Free CSS Gallery</a></p>
+    <p>Proudly powered by <a href="http://getpelican.com">pelican</a>, which takes great advantages of <a href="http://python.org">python</a>.
+  </div><!-- end #footer -->
+
+</div><!-- end #container -->
 </body>
 </html>
